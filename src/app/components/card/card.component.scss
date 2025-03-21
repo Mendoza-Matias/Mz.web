@@ -3,7 +3,10 @@
     border-radius: 8px;
     transition: all 0.3s ease;
 }
-
+.service-card i {
+    color: var(--black);
+    font-size: 25px;
+}
 .service-card.dark {
     background-color: var(--black);
     color: var(--white);

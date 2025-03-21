@@ -1,4 +1,4 @@
-<div class="spaces">
+<div class="spaces" id="services">
   <section class="container">
       <div class="section-header">
           <span class="subtitle">Nuestros Servicios</span>
@@ -11,7 +11,8 @@
           <app-card 
             *ngFor="let service of serviceList" 
             [title]="service.title" 
-            [description]="service.description">
+            [description]="service.description"
+            [icon]="service.icon">
           </app-card>
       </div>
   </section>
