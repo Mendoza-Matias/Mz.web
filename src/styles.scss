@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --green: #00ff00;
+    --black: #0a0a0a;
+    --white: #fff;
+    --font: "Montserrat", sans-serif;
+    --font-heading: "Poppins", sans-serif;
+    --font-logo: "Rubik Vinyl", system-ui;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-weight: 400;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Estilos para encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+}
+
+/* Utilidades */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.spaces {
+    margin-top: 50px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: var(--font-heading);
+}
+
+.btn:hover {
+    background-color: var(--green);
+    color: var(--black);
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--green);
+    background-color: var(--black);
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    font-family: var(--font-logo);
+    align-items: center;
+}

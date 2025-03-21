@@ -1,0 +1,19 @@
+<div class="spaces">
+  <section class="container">
+      <div class="section-header">
+          <span class="subtitle">Nuestros Servicios</span>
+          <h2>Transformamos tu visión en resultados digitales</h2>
+          <p class="section-description">
+              Ofrecemos soluciones personalizadas en diseño web, marketing digital y e-commerce. Nuestro enfoque está en crear experiencias únicas que impulsan tu negocio y mejoran tu presencia online.
+          </p>
+      </div>
+      <div *ngIf="!loading && !error" class="services-grid">
+          <app-card 
+            *ngFor="let service of serviceList" 
+            [title]="service.title" 
+            [description]="service.description">
+          </app-card>
+      </div>
+  </section>
+</div>
+<app-plans></app-plans>

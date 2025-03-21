@@ -1,0 +1,21 @@
+<div class="spaces">
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Nuestros Planes</span>
+                <h2>Precios Claros, Soluciones Eficientes y Accesibles</h2>
+                <p class="section-description">
+                    Ofrecemos planes adaptados a tus necesidades y presupuesto. Ya sea que necesites un diseño básico o una solución integral, tenemos el plan perfecto para ti.
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <app-plan-card *ngFor="let plan of planList" 
+                [plan_name]="plan.plan_name"
+                [subtitle]="plan.subtitle"
+                [description]="plan.description">
+                </app-plan-card>
+            </div>
+        </div>
+    </section>
+</div>
+<app-footer></app-footer>
