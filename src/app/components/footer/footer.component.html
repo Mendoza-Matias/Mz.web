@@ -1,20 +1,54 @@
 <footer id="contact">
     <div class="container">
-        <div class="footer-grid">
-            <div class="logo">
-                <a href="#">MZ</a> <!-- Asegúrate de agregar un enlace válido si es necesario -->
-            </div>
-            <div class="footer-contact"> 
-                <h4 class="text-green">Contacto</h4>
-                <ul>
-                    <li><strong>Ubicación: </strong> Buenos Aires</li>
-                    <li><strong>Redes sociales: </strong><a class="text-green" target="_blank" href="https://www.instagram.com/mz.devs/?next=%2Fmatias_mendoza.00%2F">mz.devs</a></li>
-                    <li><strong>Teléfono: </strong> +541170001025</li>
-                </ul>
-            </div>
+      <div class="footer-grid">
+        <div class="footer-section logo-section">
+          <div class="logo">
+            <a routerLink="/">MZ</a>
+          </div>
+          <p class="tagline">Desarrollo de Software Personalizado</p>
         </div>
-        <div class="copyright">
-            <p>© 2024 Copyright Todos los derechos reservados <span class="highlight">mz.devs</span></p>
+        
+        <div class="footer-section contact-section">
+          <h4 class="section-title">Contacto</h4>
+          <ul>
+            <li>
+              <i class="bi bi-phone"></i>
+              <strong>Teléfono:</strong> 
+              <a href="tel:+541170001025">+54 11 7000-1025</a>
+            </li>
+            <li>
+              <i class="bi bi-envelope"></i>
+              <strong>Email:</strong>
+              <a href="mailto:mmendoza&#64;gmail.com">mmendoza&#64;gmail.com</a>
+            </li>
+            <li>
+                <i class="bi bi-geo-alt"></i> 
+                <a>BS AS</a>
+              </li>
+          </ul>
         </div>
+        
+        <div class="footer-section social-section">
+          <h4 class="section-title">Síguenos</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/mz.devs" target="_blank" class="social-link">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section services-section">
+          <h4 class="section-title">Servicios</h4>
+          <ul>
+            <li>Desarrollo Web</li>
+            <li>Marketing Digital</li>
+            <li>Consultoría IT</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>© {{ currentYear }} <span class="highlight">mz.devs</span>. Todos los derechos reservados.</p>
+      </div>
     </div>
-</footer>
+  </footer>

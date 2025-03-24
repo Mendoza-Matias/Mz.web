@@ -1,22 +1,21 @@
-<!--Header-->
 <header>
     <div class="container">
-        <nav>
-            <div class="logo">
-                <a>MZ</a>
-            </div>
-            <div class="nav-links" id="navLinks">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services" class="active">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+      <nav>
+        <div class="logo">
+          <a routerLink="/">MZ</a>
+        </div>
+        <div class="nav-links" [class.active]="isMenuOpen">
+          <ul>
+            <li><a href="#home" (click)="closeMenu()">Home</a></li>
+            <li><a href="#services" (click)="closeMenu()" class="active">Servicios</a></li>
+            <li><a href="#contact"  (click)="closeMenu()">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="menu-toggle" (click)="toggleMenu()">
+          <i *ngIf="!isMenuOpen" class="bi bi-list"></i>
+          <i *ngIf="isMenuOpen" class="bi bi-x"></i>
+        </div>
+      </nav>
     </div>
-</header>
-<!--Hero-->
-<app-hero></app-hero>
+  </header>
+  <app-hero></app-hero>
